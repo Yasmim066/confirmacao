@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Visita Técnica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        h1 {
+            color: #004080;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Confirmação de Visita Técnica</h1>
+    <p>Clique no botão abaixo para confirmar sua visita técnica.</p>
+    <button id="confirmButton">Confirmar Visita</button>
+    <div class="message" id="confirmationMessage"></div>
+
+    <script>
+        const button = document.getElementById('confirmButton');
+        const message = document.getElementById('confirmationMessage');
+
+        button.addEventListener('click', () => {
+            message.textContent = 'Sua visita técnica foi confirmada com sucesso!';
+        });
+    </script>
+</body>
+</html>
